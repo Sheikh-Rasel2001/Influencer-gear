@@ -1,0 +1,114 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", serif;
+    text-decoration: none;
+    list-style: none;
+}
+/* shared style */
+.display-flex{
+    display: flex;
+}
+h1, h2, h3, h4{
+    color: rgba(58, 58, 58, 1);
+    font-weight: 700;
+}
+.primary-btn{
+    border: none;
+    background-color: rgba(224, 44, 109, 1);
+    color: #ffffff;
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 15px 20px;
+    border-radius: 8px;
+    text-align: center;
+}
+.fa-solid{
+    margin-left: 8px;
+}
+
+/* header section */
+.header{
+    max-width: 1440px;
+    margin: 0 auto;
+    padding-top: 80px;
+}
+.header-content{
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 50px;
+}
+.nav-items{
+    gap: 30px;
+}
+.navbar-title{
+    font-size: 1.5rem;
+}
+.nav-items li a{
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: rgba(58, 58, 58, 1);
+}
+.fa-cart-shopping, .fa-magnifying-glass{
+    font-size: 1.5rem;
+}
+.journey{
+    justify-content: space-between;
+    padding-top: 30px;
+}
+.journey-details{
+    max-width: 600px;
+    padding-top: 50px;
+}
+.journey-title{
+    font-size: 3.25rem;
+    margin-bottom: 20px;
+}
+.journey-description{
+    font-size: 1rem;
+    color: rgba(58, 58, 58, 1);
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+.camera{
+    position: relative;
+    margin-bottom: 50px;
+}
+.cam{
+    position: absolute;
+    left: 25px;
+    bottom: 40px;
+}
+/* company section style */
+.company{
+    max-width: 1200px;
+    margin: 0 auto;
+    justify-content: space-between;
+    padding: 30px 20px;
+    margin-bottom: 80px;
+    box-shadow: 0px 1px 3px rgb(219, 218, 218);
+}
+
+
+
+/* responsive design style */
+@media screen and (max-width: 576px) {
+    .header-content,
+    .nav-items,
+    .journey,
+    .company{
+        flex-direction: column;
+    }
+    .journey{
+        padding-left: 30px;
+    }
+    .camera{
+        margin-top: 30px;
+    }
+    .company{
+        gap: 50px;
+        width: 50%;
+        box-shadow: 0px 0px 0px rgb(219, 218, 218);
+    }
+}
