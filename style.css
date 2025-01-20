@@ -71,14 +71,13 @@ h1, h2, h3, h4{
     font-weight: 500;
     margin-bottom: 20px;
 }
-.camera{
+/* .camera{
     position: relative;
     margin-bottom: 50px;
-}
+} */
 .cam{
-    position: absolute;
-    left: 25px;
-    bottom: 40px;
+    margin-top: -455px;
+    margin-left: 40px;
 }
 /* company section style */
 .company{
