@@ -89,15 +89,112 @@ h1, h2, h3, h4{
     margin-bottom: 80px;
     box-shadow: 0px 1px 3px rgb(219, 218, 218);
 }
-
-
+.main{
+    max-width: 1000px;
+    margin: 0 auto;
+}
+/* product card design */
+.product-title{
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 50px;
+}
+.product-card{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+.card{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    box-shadow: 0px 10px 30px rgba(243, 243, 243, 1);
+    gap: 10px;
+}
+.card-title{
+    font-weight: 600;
+}
+.price{
+    font-size: 1.3rem;
+    font-weight: 500;
+    color: rgba(0, 0, 0, 0.87);
+}
+.fa-star{
+    color: orange;
+}
+.product-details{
+    color: rgba(120, 120, 133, 1);
+    margin-top: 10px;
+}
+span{
+    color: rgba(120, 120, 133, 1);
+    font-size: 1.2rem;
+    font-weight: 600; 
+    padding-left: 8px;
+}
+p.see{
+    color: rgba(224, 44, 109, 1);
+    font-weight: 600;
+    font-size: 1.4rem;
+    text-align: right;
+    max-width: 1000px;
+    margin-top: 30px;
+    margin-bottom: 80px;
+}
+.featured{
+    max-width: 1150px;
+    margin: 0 auto;
+}
+.feature-content{
+    justify-content: space-between;
+    gap: 50px;
+}
+.feature-detail{
+    padding: 30px;
+}
+.feature-title{
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+.feature-description{
+    color: rgba(108, 108, 108, 1);
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 28px;
+    margin-bottom: 20px;
+}
+/* feature section */
+.footer{
+    max-width: 1685px;
+    background-color: rgba(10, 8, 38, 1);
+    text-align: center;
+    margin-top: 80px;
+    padding: 30px 0;
+}
+.footer-title{
+    color: #ffffff;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+.copy, .reserve{
+    font-size: 1.2rem;
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+.social-icon{
+    filter: grayscale(100%);
+}
 
 /* responsive design style */
 @media screen and (max-width: 576px) {
     .header-content,
     .nav-items,
     .journey,
-    .company{
+    .company,
+    .feature-content{
         flex-direction: column;
     }
     .journey{
@@ -110,5 +207,12 @@ h1, h2, h3, h4{
         gap: 50px;
         width: 50%;
         box-shadow: 0px 0px 0px rgb(219, 218, 218);
+    }
+    .product-card{
+        grid-template-columns: 1fr;
+       justify-items: center;
+    }
+    .feature-content{
+        align-items: center;
     }
 }
